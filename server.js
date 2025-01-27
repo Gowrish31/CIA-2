@@ -4,7 +4,9 @@ const mongoose  = require('mongoose');
 const restaurantRoute = require('./routes/restaurantRoute.js');
 const itemRoute = require('./routes/itemRoute.js')
 
-app.use(express.json())
+const app = express();
+
+app.use(express.json());
 
 app.use('/restaurant',restaurantRoute);
 app.use('/item' , itemRoute);

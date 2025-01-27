@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const express =require('ecpress')
+const express =require('express')
 
 const app = express.Router();
 const restaurant = require("../model/hotel.schema.js");
